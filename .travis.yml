@@ -9,10 +9,10 @@ script:
 
 after_success:
   - docker build -t papiyinks/birdboard-app .
-  # - docker build -t noalistic/birdboard-nginx -f Dockerfile.nginx .
+  - docker build -t noalistic/birdboard-nginx -f Dockerfile.nginx .
   - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
   - docker push noalistic/birdboard-app
-  # - docker push noalistic/birdboard-nginx
+  - docker push noalistic/birdboard-nginx
 
 deploy:
   provider: elasticbeanstalk
