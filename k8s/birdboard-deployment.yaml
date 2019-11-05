@@ -13,7 +13,7 @@ spec:
         component: birdboard
     spec:
       containers:
-        - name: birdboard-deployment
+        - name: birdboard
           image: noalistic/birdboard-app
           ports:
             - containerPort: 80
