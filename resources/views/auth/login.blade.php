@@ -12,7 +12,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-sm-right mb-2 block">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-sm-right mb-1 block">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="border w-full form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-sm-right mb-2 block">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-sm-right mb-1 mt-4 block">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="border w-full mb-3 form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -53,7 +53,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="button is-link mr-2">
+                                <button type="submit" class="button is-link mr-2 mt-3">
                                     {{ __('Login') }}
                                 </button>
 
