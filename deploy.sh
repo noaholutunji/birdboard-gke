@@ -5,4 +5,4 @@ docker push noalistic/birdboard-app:latest
 docker push noalistic/birdboard-app:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/birdboard-deployment birdboard=papiyinks/birdboard-app:$SHA
+kubectl set image deployments/birdboard-deployment birdboard=noalistic/birdboard-app:$SHA
